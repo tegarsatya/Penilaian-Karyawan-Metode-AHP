@@ -286,6 +286,8 @@ if (isset($_GET['ta'])) {
                             ?>
                         </td>
                         <?php
+
+                              // Output HAsil Perhitungan Nilai Akhir
                             if ($hasil < 45) {
                               $stats="<label class='badge btn-danger'>Sangat Kurang</label>";
                             }elseif ($hasil >= 45 and $hasil < 56) {
@@ -297,8 +299,29 @@ if (isset($_GET['ta'])) {
                             }elseif ($hasil >= 86) {
                               $stats="<label class='badge btn-success'>Sangat Baik</label>";
                             }
+                            
+                            // end 
                           echo "<td>$stats</td>";
+
                         ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </tr>
                     <?php endwhile; ?>                  
                 </tbody>

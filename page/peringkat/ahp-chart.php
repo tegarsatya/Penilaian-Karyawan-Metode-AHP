@@ -52,6 +52,7 @@
 		//echo $b['baik'];
 		if ($i < $lim) {
 			$koma=",";
+			
 		}else{
 			$koma="";
 		}
