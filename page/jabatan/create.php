@@ -36,7 +36,7 @@
             <div class="form-group">
               <label for="exampleInputEmail1">Job Description</label>
               <textarea name="JD" placeholder="Masukan Job Description" class="form-control input-lg" id="exampleInputEmail1"></textarea>
-             <!--  <input type="text" class="form-control input-lg" id="exampleInputEmail1" placeholder="Tahun Awal" name="JD" required> -->
+              <!-- <input type="text" class="form-control input-lg" id="exampleInputEmail1" placeholder="Tahun Awal" name="JD" required> -->
               
             </div>
           </div>

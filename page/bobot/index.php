@@ -25,7 +25,7 @@ if (isset($_GET['delete'])) {
         <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Id_kriteria</th>
+              <th>Nama kriteria</th>
               <th>Nilai</th>
               <th>Aksi</th>
             </tr>

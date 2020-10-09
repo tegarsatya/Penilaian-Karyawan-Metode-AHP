@@ -239,7 +239,7 @@ if (isset($_GET['logout'])) {
           </li> -->
             <li class="<?= (@$_GET['p'] == 'rank') ? 'active' : '' ?>">
               <a href="?p=rank">
-                <i class="fa fa-trophy"></i> <span>Ranking</span>
+                <i class="fa fa-trophy"></i> <span>Laporan Penilaian </span>
               </a>
             </li>
             <!-- <li class="<?= (@$_GET['p'] == 'report') ? 'active' : '' ?>">

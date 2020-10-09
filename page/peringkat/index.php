@@ -297,31 +297,13 @@ if (isset($_GET['ta'])) {
                             }elseif ($hasil >= 76 and $hasil < 86) {
                               $stats="<label class='badge btn-info'>Baik</label>";
                             }elseif ($hasil >= 86) {
-                              $stats="<label class='badge btn-success'>Sangat Baik</label>";
+                              $stats="<label class='badge btn-success'>Selamat mendapatkan rewards</label>";
                             }
-                            
+
                             // end 
                           echo "<td>$stats</td>";
 
                         ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </tr>
                     <?php endwhile; ?>                  
                 </tbody>

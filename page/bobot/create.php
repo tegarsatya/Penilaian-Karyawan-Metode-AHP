@@ -6,7 +6,7 @@ error_reporting(0);
 //   }
 //   else{
 if (isset($_POST['simpan'])) {
-  $sql = "insert into nilai_kriteria values('" . $_POST[nilai] . "','" . $_POST[id_kriteria] . "')";
+  $sql = "insert into nilai_kriteria values('" . $_POST[id_nilai] . "','" .$_POST[nilai]. "','" .$_POST[id_kriteria]. "')";
   $query = mysqli_query($con, $sql);
   if ($query) {
     echo "<script>alert('Data berhasil ditambahkan!');window.location.href='index.php?p=bobot'</script>";
@@ -48,7 +48,7 @@ if (isset($_POST['simpan'])) {
         <div class="box-body">
 
           <div class="form-group">
-            <label for="exampleInputEmail1">Nama karyawan</label>
+            <label for="exampleInputEmail1">Nilai Kriteria</label>
             <input type="text" class="form-control input-lg" id="exampleInputEmail1" placeholder="Masukan Nilai" name="nilai" <?php if (isset($_GET['nilai'])) {
                                                                                                                                             echo "value='" . $_GET['nilai'] . "'";
                                                                                                                                           } else {
