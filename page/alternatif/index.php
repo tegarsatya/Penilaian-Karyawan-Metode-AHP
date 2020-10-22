@@ -98,9 +98,9 @@ if (isset($_GET['ta'])) {
             <div class="form-group">
               <label for="exampleInputEmail1">Periode Pengajaran</label>
               <input type="text" class="form-control" name="ta" value="<?php echo $_GET['ta']; ?>" required readonly>
-              <label for="exampleInputEmail1">Alternatif</label>
+              <label for="exampleInputEmail1">Nama Karyawan</label>
               <select name="NIP" id="" class="form-control" required>
-                <option disabled selected>-- Pilih Alternatif --</option>
+                <option disabled selected>-- Pilih Karyawan --</option>
                 <?php 
                 //$sql = "select * from karyawan where status='$_GET[d]'";
                 $sql = "SELECT * from karyawan 

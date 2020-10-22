@@ -288,15 +288,15 @@ if (isset($_GET['ta'])) {
                         <?php
 
                               // Output HAsil Perhitungan Nilai Akhir
-                            if ($hasil < 45) {
-                              $stats="<label class='badge btn-danger'>Sangat Kurang</label>";
-                            }elseif ($hasil >= 45 and $hasil < 56) {
+                            if ($hasil < 50) {
+                              $stats="<label class='badge btn-danger'>Buruk</label>";
+                            }elseif ($hasil >= 51 and $hasil < 60) {
                               $stats="<label class='badge btn-danger'>Kurang</label>";
-                            }elseif ($hasil >= 56 and $hasil < 76) {
-                              $stats="<label class='badge btn-primary'>Sedang</label>";
-                            }elseif ($hasil >= 76 and $hasil < 86) {
+                            }elseif ($hasil >= 61 and $hasil < 75) {
+                              $stats="<label class='badge btn-primary'>Cukup</label>";
+                            }elseif ($hasil >= 76 and $hasil < 90) {
                               $stats="<label class='badge btn-info'>Baik</label>";
-                            }elseif ($hasil >= 86) {
+                            }elseif ($hasil >= 91) {
                               $stats="<label class='badge btn-success'>Selamat mendapatkan rewards</label>";
                             }
 
