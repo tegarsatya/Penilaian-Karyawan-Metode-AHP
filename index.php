@@ -127,7 +127,6 @@ if (isset($_GET['logout'])) {
               </li>
             <?php endif ?>
             <?php if (@$_SESSION['logged'] == 2 || @$_SESSION['logged'] == 1) : ?>
-              <li><a class="dropdown-item" href="?p=alternatif">Penilaian karyawan</a></li>
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN9igcyo_jp2dYcTSY3qY-o-CY7u4Unb3yWtDJjS5Udj0uBswAZg" class="user-image" alt="User Image">
@@ -228,7 +227,7 @@ if (isset($_GET['logout'])) {
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="?p=bobot&act=create"><i class="fa fa-circle-o"></i> Tambah Data  </a></li>
+                <li><a href="?p=bobot&act=create"><i class="fa fa-circle-o"></i> Tambah Data </a></li>
                 <li><a href="?p=bobot"><i class="fa fa-circle-o"></i> Data Nilai</a></li>
               </ul>
             </li>
@@ -243,10 +242,10 @@ if (isset($_GET['logout'])) {
               </a>
             </li>
             <li class="<?= (@$_GET['p'] == 'report') ? 'active' : '' ?>">
-            <a href="?p=report">
-              <i class="fa fa-file"></i> <span>Laporan</span>
-            </a>
-          </li>
+              <a href="?p=report">
+                <i class="fa fa-file"></i> <span>Laporan</span>
+              </a>
+            </li>
           <?php endif; ?>
 
           <?php if (@$_SESSION['logged'] == 2) : ?>
@@ -257,18 +256,17 @@ if (isset($_GET['logout'])) {
           </li> -->
             <li class="<?= (@$_GET['p'] == 'alternatif') ? 'active' : '' ?>">
               <a href="?p=alternatif">
-                <i class="fa fa-list"></i> <span>Alternatif</span>
+                <i class="fa fa-list"></i> <span>Penilaian Karyawan</span>
               </a>
             </li>
-            <li class="<?= (@$_GET['p'] == 'rank') ? 'active' : '' ?>">
+            <!-- <li class="<?= (@$_GET['p'] == 'rank') ? 'active' : '' ?>">
               <a href="?p=rank">
                 <i class="fa fa-trophy"></i> <span>Ranking</span>
               </a>
-            </li>
+            </li> -->
           <?php endif; ?>
 
           <?php if (@$_SESSION['logged'] == true) : ?>
-            <li class="header">OTHER</li>
             <li><a href="?logout"><i class="fa fa-circle-o text-red"></i> <span>Logout</span></a></li>
           <?php endif; ?>
         </ul>

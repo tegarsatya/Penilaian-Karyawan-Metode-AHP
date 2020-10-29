@@ -44,7 +44,7 @@
           <div class="box-body">
             <div class="form-group">
               <label for="exampleInputEmail1">NIP</label>
-              <input type="text" class="form-control input-lg" id="exampleInputEmail1" placeholder="Masukan NIP" name="NIP" <?php if (isset($_GET['nip'])) { echo "value='".$_GET['nip']."'";}else{echo "";} ?> required>
+              <input type="text" class="form-control input-lg" id="exampleInputEmail1" placeholder="Masukan NIP / NIDN" name="NIP" <?php if (isset($_GET['nip'])) { echo "value='".$_GET['nip']."'";}else{echo "";} ?> required>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Nama karyawan</label>

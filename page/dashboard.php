@@ -13,7 +13,7 @@
 	  <div class="callout-infout callout-info home">
 	    <h4>Selamat datang <?= $_SESSION['name'] ?></h4>
 
-	    <p>Sistem penilaian kinerja karyawan <b>Universitas Algifari</b></p>
+	    <p>Sistem penilaian kinerja karyawan <b>Yayasan Al-Gifari</b></p>
 	  </div>
 	<?php else : ?>
 

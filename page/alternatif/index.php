@@ -96,7 +96,7 @@ if (isset($_GET['ta'])) {
         <form role="form" method="post">
           <div class="box-body">
             <div class="form-group">
-              <label for="exampleInputEmail1">Periode Pengajaran</label>
+              <label for="exampleInputEmail1">Periode Penilaian</label>
               <input type="text" class="form-control" name="ta" value="<?php echo $_GET['ta']; ?>" required readonly>
               <label for="exampleInputEmail1">Nama Karyawan</label>
               <select name="NIP" id="" class="form-control" required>
@@ -226,7 +226,7 @@ $fileInput.on('change', function() {
           <h3 class="box-title">
           <form action="" method="">
           <input type="text" value="alternatif" name="p" hidden>
-          <label>Periode Pengajaran: </label>
+          <label>Periode Penilaian: </label>
             <select class="custom-select" name="ta" required>';
             while ($per=mysqli_fetch_array($period)) {
               echo '<option  value="'.$per['periode'].'" ';
