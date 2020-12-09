@@ -25,22 +25,22 @@ if (isset($_POST['sigin'])) {
 
     echo "<script>alert('Login berhasil!');window.location.href='index.php'</script>";
   }
-  //    else {
+     else {
 
-  //   $sql = "select * from karyawan where username='$user' and password='$pass'";
-  //   $query = mysqli_query($con, $sql);
-  //   $data = mysqli_fetch_assoc($query);
-  //   $row = mysqli_num_rows($query);
-  //   if ($row > 0) {
-  //     $_SESSION['logged'] = 2;
-  //     $_SESSION['id_user'] = $data['NIP'];
-  //     $_SESSION['name'] = $data['nama_karyawan'];
+    $sql = "select * from karyawan where username='$user' and password='$pass'";
+    $query = mysqli_query($con, $sql);
+    $data = mysqli_fetch_assoc($query);
+    $row = mysqli_num_rows($query);
+    if ($row > 0) {
+      $_SESSION['logged'] = 2;
+      $_SESSION['id_user'] = $data['NIP'];
+      $_SESSION['name'] = $data['nama_karyawan'];
 
-  //     echo "<script>alert('Login berhasil!');window.location.href='index.php'</script>";  
-  //   } else {
-  //       echo "<script>alert('Username atau Password salah!')</script>";
-  //   }
-  // }
+      echo "<script>alert('Login berhasil!');window.location.href='index.php'</script>";  
+    } else {
+        echo "<script>alert('Oops.. Username atau Password salah! Silakan Login Lagi!')</script>";
+    }
+  }
 }
 
 ?>

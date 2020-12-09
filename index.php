@@ -241,11 +241,11 @@ if (isset($_GET['logout'])) {
                 <i class="fa fa-trophy"></i> <span>Laporan Penilaian </span>
               </a>
             </li>
-            <li class="<?= (@$_GET['p'] == 'report') ? 'active' : '' ?>">
+            <!-- <li class="<?= (@$_GET['p'] == 'report') ? 'active' : '' ?>">
               <a href="?p=report">
                 <i class="fa fa-file"></i> <span>Laporan</span>
               </a>
-            </li>
+            </li> -->
           <?php endif; ?>
 
           <?php if (@$_SESSION['logged'] == 2) : ?>
